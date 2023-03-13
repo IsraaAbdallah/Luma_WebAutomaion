@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-12T14:41:30 EET" name="EndToEnd" finished-at="2023-03-12T14:42:17 EET" duration-ms="46513">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.Run_payment@7e5afaa6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-03-12T14:41:30 EET" name="End to End Testing" finished-at="2023-03-12T14:42:17 EET" duration-ms="46513">
+      <class name="runners.Run_payment">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.Run_payment@7e5afaa6]" started-at="2023-03-12T14:41:30 EET" name="setUpClass" finished-at="2023-03-12T14:41:31 EET" duration-ms="1350" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4b033eac]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.Run_payment@7e5afaa6]" started-at="2023-03-12T14:41:32 EET" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-12T14:42:16 EET" duration-ms="44925" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User can enter shipping information"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["payment Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.Run_payment@7e5afaa6]" started-at="2023-03-12T14:42:16 EET" name="tearDownClass" finished-at="2023-03-12T14:42:17 EET" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.Run_payment -->
+    </test> <!-- End to End Testing -->
+  </suite> <!-- EndToEnd -->
+</testng-results>

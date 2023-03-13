@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="First Build">
+
+
+    <test  name="Functional Testing">
+        <classes>
+            <class name="runners.Run_login"/>
+            <class name="runners.Run_register"/>
+            <class name="runners.Run_search"/>
+            <class name="runners.Run_productDetails"/>
+            <class name="runners.Run_review"/>
+
+
+        </classes>
+    </test> <!-- LUMA_WebTesting -->
+
+</suite> <!-- Default Suite -->
+

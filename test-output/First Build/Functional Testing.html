@@ -1,0 +1,230 @@
+<html>
+<head>
+<title>TestNG:  Functional Testing</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Functional Testing</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Mar 10 05:50:52 EET 2023</td>
+</tr>
+<tr><td>Total time:</td><td>282 seconds (282902 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.Run_search.runScenario()'><b>runScenario</b><br>Test class: runners.Run_search<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User searches for a valid product", "Search functionality"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[2]/main[1]/div[3]/div[1]/div[2]/dl[1]/dt[1]&quot;}
+  (Session info: chrome=110.0.5481.180)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [db2b50b4bcbc8d7dcf84ae7533785895, findElement {using=xpath, value=/html[1]/body[1]/div[2]/main[1]/div[3]/div[1]/div[2]/dl[1]/dt[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56612}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56612/devtoo..., se:cdpVersion: 110.0.5481.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: db2b50b4bcbc8d7dcf84ae7533785895
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.luma.pages.SearchProductPage.validate_related_Items(SearchProductPage.java:23)
+	at stepDefintions.SearchPage.related_search_terms_list_is_displayed(SearchPage.java:42)
+	at ✽.Related search terms list is displayed(file:///C:/Users/DELL/IdeaProjects/LUMA_WebTesting/src/test/resources/features/Search.feature:10)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1876028021", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1876028021'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html[1]/body[1]/div[2]/main[1]/div[3]/div[1]/div[2]/dl[1]/dt[1]&quot;}
+  (Session info: chrome=110.0.5481.180)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [db2b50b4bcbc8d7dcf84ae7533785895, findElement {using=xpath, value=/html[1]/body[1]/div[2]/main[1]/div[3]/div[1]/div[2]/dl[1]/dt[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56612}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56612/devtoo..., se:cdpVersion: 110.0.5481.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: db2b50b4bcbc8d7dcf84ae7533785895
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.luma.pages.SearchProductPage.validate_related_Items(SearchProductPage.java:23)
+	at stepDefintions.SearchPage.related_search_terms_list_is_displayed(SearchPage.java:42)
+	at ✽.Related search terms list is displayed(file:///C:/Users/DELL/IdeaProjects/LUMA_WebTesting/src/test/resources/features/Search.feature:10)
+</pre></div></td>
+<td>24</td>
+<td>runners.Run_search@48f278eb</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.Run_login.runScenario()'><b>runScenario</b><br>Test class: runners.Run_login<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Unsuccessful Login with blank credentials", "Login functionality"</td>
+<td></td>
+<td>13</td>
+<td>runners.Run_login@169e6180</td></tr>
+<tr>
+<td title='runners.Run_productDetails.runScenario()'><b>runScenario</b><br>Test class: runners.Run_productDetails<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User can add show productDetails", "productDetails Page functionality"</td>
+<td></td>
+<td>17</td>
+<td>runners.Run_productDetails@2f217633</td></tr>
+<tr>
+<td title='runners.Run_login.runScenario()'><b>runScenario</b><br>Test class: runners.Run_login<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Unsuccessful Login with invalid credentials", "Login functionality"</td>
+<td></td>
+<td>14</td>
+<td>runners.Run_login@169e6180</td></tr>
+<tr>
+<td title='runners.Run_productDetails.runScenario()'><b>runScenario</b><br>Test class: runners.Run_productDetails<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User can navigate to reviews Box from productDetails page", "productDetails Page functionality"</td>
+<td></td>
+<td>16</td>
+<td>runners.Run_productDetails@2f217633</td></tr>
+<tr>
+<td title='runners.Run_search.runScenario()'><b>runScenario</b><br>Test class: runners.Run_search<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User searches for an invalid product", "Search functionality"</td>
+<td></td>
+<td>10</td>
+<td>runners.Run_search@48f278eb</td></tr>
+<tr>
+<td title='runners.Run_search.runScenario()'><b>runScenario</b><br>Test class: runners.Run_search<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User searches for a valid product through autocomplete list", "Search functionality"</td>
+<td></td>
+<td>14</td>
+<td>runners.Run_search@48f278eb</td></tr>
+<tr>
+<td title='runners.Run_login.runScenario()'><b>runScenario</b><br>Test class: runners.Run_login<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should be able to login with valid credentials", "Login functionality"</td>
+<td></td>
+<td>16</td>
+<td>runners.Run_login@169e6180</td></tr>
+<tr>
+<td title='runners.Run_productDetails.runScenario()'><b>runScenario</b><br>Test class: runners.Run_productDetails<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User can add a product to compare list", "productDetails Page functionality"</td>
+<td></td>
+<td>17</td>
+<td>runners.Run_productDetails@2f217633</td></tr>
+<tr>
+<td title='runners.Run_productDetails.runScenario()'><b>runScenario</b><br>Test class: runners.Run_productDetails<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User can add a product to shopping cart", "productDetails Page functionality"</td>
+<td></td>
+<td>15</td>
+<td>runners.Run_productDetails@2f217633</td></tr>
+<tr>
+<td title='runners.Run_register.runScenario()'><b>runScenario</b><br>Test class: runners.Run_register<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User registers only by filling all mandatory fields", "Registration functionality"</td>
+<td></td>
+<td>11</td>
+<td>runners.Run_register@1da2cb77</td></tr>
+<tr>
+<td title='runners.Run_register.runScenario()'><b>runScenario</b><br>Test class: runners.Run_register<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Unsuccessful registration using blank fields", "Registration functionality"</td>
+<td></td>
+<td>13</td>
+<td>runners.Run_register@1da2cb77</td></tr>
+<tr>
+<td title='runners.Run_search.runScenario()'><b>runScenario</b><br>Test class: runners.Run_search<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User searches for a valid product", "Search functionality"</td>
+<td></td>
+<td>9</td>
+<td>runners.Run_search@48f278eb</td></tr>
+<tr>
+<td title='runners.Run_productDetails.runScenario()'><b>runScenario</b><br>Test class: runners.Run_productDetails<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Un logged User tries to add a product to wishList", "productDetails Page functionality"</td>
+<td></td>
+<td>17</td>
+<td>runners.Run_productDetails@2f217633</td></tr>
+<tr>
+<td title='runners.Run_register.runScenario()'><b>runScenario</b><br>Test class: runners.Run_register<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User creates a duplicate account", "Registration functionality"</td>
+<td></td>
+<td>14</td>
+<td>runners.Run_register@1da2cb77</td></tr>
+<tr>
+<td title='runners.Run_productDetails.runScenario()'><b>runScenario</b><br>Test class: runners.Run_productDetails<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User can add show productInfo", "productDetails Page functionality"</td>
+<td></td>
+<td>17</td>
+<td>runners.Run_productDetails@2f217633</td></tr>
+<tr>
+<td title='runners.Run_review.runScenario()'><b>runScenario</b><br>Test class: runners.Run_review<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User can add review", "Review functionality"</td>
+<td></td>
+<td>22</td>
+<td>runners.Run_review@a530d0a</td></tr>
+<tr>
+<td title='runners.Run_search.runScenario()'><b>runScenario</b><br>Test class: runners.Run_search<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User searches for a valid product and selects the products by a sorter", "Search functionality"</td>
+<td></td>
+<td>13</td>
+<td>runners.Run_search@48f278eb</td></tr>
+</table><p>
+</body>
+</html>
